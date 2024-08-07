@@ -2,6 +2,10 @@
   "extends": "../../../tsconfig.json",
   "include": ["src", "test"],
   "compilerOptions": {
-    "jsx": "preserve"
-  }
+    "jsx": "preserve",
+    "paths": {
+      "vue": ["../../node_modules/vue"]
+    }
+  },  
+  "exclude": ["node_modules"]
 }
